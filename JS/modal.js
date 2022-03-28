@@ -5,7 +5,6 @@ export default class Modal {
     this.fechar = document.querySelector(fecharModal);
 
     this.toggleModal = this.toggleModal.bind(this)
-    // this.cliqueFora = this.cliqueFora.bind(this)
     this.verificar = this.verificar.bind(this)
   }
 
