@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f1f1f1;
+  color: #211d19;
+}
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container.ativo {
+  display: flex;
+}
+@keyframes mode {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ativo .modal {
+  animation: mode 0.5s forwards;
+}
+
+.modal {
+  background: white;
+  padding: 40px;
+  border: 10px solid #e29508;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+  min-width: 300px;
+}
+[data-fechar="fechar"] {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid white;
+  box-shadow: 0 0 5px 2px black;
+  color: white;
+  background: rgb(243, 71, 40);
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+.modal label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0 .5rem 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: .7rem .5rem;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.modal button[type="submit"] {
+  display: block;
+  background: #e29508;
+  border: none;
+  margin-top: 1rem;
+  padding: .7rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}

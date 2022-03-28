@@ -1,0 +1,75 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>GROSSETO</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <h1>GROSSETO</h1>
+<ul class="menu">
+    <li data-dropdown><a href="#sobre">Sobre</a>
+      <ul class="drop-menu">
+        <li><a href="#">A Empresa</a></li>
+        <li><a href="#">Sócios</a></li>
+        <li><a href="#">Equipe</a></li>
+        <li><a href="#">Investidores</a></li>
+      </ul>
+    </li>
+    <li data-dropprodutos ><a href="#produtos">Produtos</a>
+      <ul class="drop-prod">
+        <li><a href="#">Gesso</a></li>
+        <li><a href="#">Porcelanato</a></li>
+        <li><a href="#">Pedra Natural</a></li>
+        <li><a href="#">Quartzito</a></li>
+        <li><a href="#">Mármore</a></li>
+      </ul>
+    </li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="login.com" data-entrar ="entrar">Login</a></li>
+ </ul><!-- fim do menu -->
+
+<div class="content">
+  <div class="acab item">
+    <h2>Acabamentos de qualidade</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, blanditiis!</p>
+    <input type="button" class="btn" value="ver mais">
+  </div>
+  <div class="foto" data-tooltip aria-label="Revestimento de Taranto!">
+    <img src="imagens/acabamento.jpg" alt="acabamento">
+  </div>
+  <div class="h2 item">
+    <H2>VANTAGENS GROSSETO</H2>
+  </div>  
+  <div class="info-add item">
+    <h3>Beleza</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <h3>Qualidade</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+    <h3>Estilos Únicos</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, incidunt.</p>
+</div>
+</div><!-- fim do content -->
+
+<footer>
+  <h2>GROSSETO - Todos os direitos reservados</h2>
+</footer>
+<section data-modal="modal" class="modal-container ">
+  <div class="modal">
+    <button data-fechar="fechar" class="fechar">X</button>
+    <form action="">
+      <label for="email">E-mail</label>
+      <input type="text" for="email" id="email">
+      <label for="password">Senha</label>
+      <input type="password" for="password" id="password">
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</section>
+<script type="module" src="js/scriptfinal/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.content .btn.red{
+  color: red;
+  background:white;
+  font-weight: bold;
+  border: 2px solid red;
+}
+.content .btn.white{
+  color: white;
+  background:red;
+  font-weight: bold;
+}
